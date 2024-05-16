@@ -1,3 +1,4 @@
+// Floor.js
 class Floor {
   constructor() {
     this.x = 0;

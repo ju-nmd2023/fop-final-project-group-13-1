@@ -14,9 +14,16 @@ function setup() {
 }
 
 function draw() {
+  background(250, 200, 250);
   drawable.forEach(function (object) {
-    object.update(drawable[0]);
+    object.update();
     object.draw();
   });
-  // get the input
+}
+
+//jump function
+function keyPressed() {
+  if (keyCode === UP_ARROW) {
+    player.jump();
+  }
 }
